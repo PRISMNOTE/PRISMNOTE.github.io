@@ -1,0 +1,12 @@
+name: Sync To GitLab  #名字  可自定义
+on: page_build  #触发条件   page_build表示Github Page部署完成后触发
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wearerequired/git-mirror-action@master #开源actions包
+        env:
+          SSH_PRIVATE_KEY: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiZDLA9pcln4aNSGvLMFgh61EpkbjjR4EkHi3VvZ+cU3jHt6iPI29PapO+2ubRRLkYCLMGpJj8N9MJZtcrnlfdw6vIVYl/+pGWGVIEtG33R5NSlZAmS3iBTky7APHT7usEhC59rWaRCBd0Y3Lo7v7MCwCgDYEUYW/JasOst2eXyHlSzRh7nTN1jyE4lLggUzwAHSAzi1coO+pK49THRJmMEd+LtJwN/+Odc0HFFPJPNzkLjSvYA4P4UxUjO2kaZ/YX+fmt9IroEvKSSDXAQajzb1n6jKBhR+ZtRPdNXwGWwFqNywqpgJk6zlWy7p5DbsDbYXsx1FLBD45z9RxcIFRWP1qOVFiWjjO0WQuhsWijUQMolEZ2dlJ3De9AjyC7c5GzEERlG7GmETLkClFb0lrAYUWncgtHMTv8yjQxiUOFyDDsBwKf3sWJ632bYkHD29Saljp3PW0oWRKQ2A/emm8c96bhqmgj3r+0eAHU5mkpVv6HDerZjp5Vs4+gDbXxWmU= tc.aibeto@outlook.com"
+        with:
+          source-repo: "git@github.com/PrismMusic/prismmusic.github.io.git" # github仓库地址
+          destination-repo: "git@gitlab.com/prismclub/prismclub.gitlab.io" # gitlab仓库地址
