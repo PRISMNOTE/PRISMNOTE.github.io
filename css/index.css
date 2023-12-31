@@ -16,12 +16,14 @@
 /* 以上方法由于加载顺序导致加载延时 */
 
 body{
-    background-color: red;
+    background-color: #fff;
+    min-width: 720px;
 }
 
 .header{
     background-color: #fff;
     width: 100%;
+    min-width: 720px;
     height: 80px;
     margin: 0px;
     padding: 5px 2vw;
@@ -31,18 +33,24 @@ body{
     /* box-shadow: #888 0 0 10px; */
     align-items: center;
     flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
     z-index: 100;
     top: 0;
 }
 .header>.logo{
     background-image: url("../images/titile.png");
-    background-size: 534px 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 534px;
+    max-width: 70vw;
+    margin: 10px 0;
     height: 60px;
+    flex-shrink: 0;
 }
 
 .header ul{
-    width: 60%;
+    /* width: 60%; */
     height: 80%;
     display: flex;
     position: relative;
@@ -54,9 +62,10 @@ body{
 }
 .header li{
     border-right: #ccc 1px solid;
-    width: 17%;
+    width: 110px;
     height: 60%;
-    padding: 0 2%;
+    /* flex-shrink: 0; */
+    padding: 0 10px;
 }
 .header li:last-child{
     border-right: 0;
