@@ -1,0 +1,10 @@
+:root{
+    --color-header: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6) 25%, rgba(0, 0, 0, .2) 70%, rgba(0, 0, 0, 0));
+    --color-button-hover: #38f;
+    --color-cnname: linear-gradient(160deg, #3A8188, #DB0AA7);
+    
+    --if-list: none;
+
+    --size-card-width: 28vw;
+    --size-card-height: 17.3vw;
+}

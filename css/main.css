@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'CodeNewRoman';
+    src: url('../fonts/Code-New-Roman-b-1.otf');
+}
+@font-face {
+    font-family: 'YousheBiaotiyuan';
+    src: url('../fonts/YouSheBiaoTiYuan-2.otf');
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+@keyframes startIntro {
+    from {left: 1.7cap;}
+    10% {left: 2.6cap;}
+    20% {left: 3.5cap;}
+    30% {left: 4.3cap;}
+    40% {left: 5.2cap;}
+    50% {left: 6.1cap;}
+    80% {left: 6.9cap;}
+    90% {left: 7.7cap;}
+    to {left: 7.7cap;}
+}
+@keyframes bling {
+    from {background-color: #eee;}
+    50% {background-color: transparent;}
+    to {background-color: transparent;}
+}
+@keyframes trans {
+    from {top: 0;}
+    50% {top: 8vw; left: 1.7cap;}
+    to {top: 8vw; left: 1.7cap;}
+}
+@keyframes appear {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {opacity: 1;}
+}
+@keyframes slogan {
+    from {top: 10vh; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+.intro{
+    position: absolute;
+    font-family: 'CodeNewRoman';
+    color: #eee;
+    font-size: 5vw;
+    margin-top: 8vh;
+    margin-left: 5vw;
+    z-index: 99;
+    animation: appear 1s reverse 1.7s 1 both;
+
+}
+.secondline{
+    position: absolute;
+    font-family: 'CodeNewRoman';
+    color: #eee;
+    font-size: 5vw;
+    margin-top: calc(8vh + 8vw);
+    margin-left: 5vw;
+    z-index: 99;
+    animation: appear 1ms step-end 1.5s 1 both, appear 1s reverse 1.7s 1 forwards;
+}
+.intro::before{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    top: 0;
+    animation: startIntro 1s step-end 1 forwards;
+}
+.intro::after{
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: .9cap;
+    background-color: #eee;
+    animation: bling 1s step-end infinite, startIntro 1s step-end 1 forwards, trans 1ms step-end 1.5s 1 both;
+}
+
+.cnname{
+    width: max-content;
+    position: relative;
+    /* min-height: 30vw; */
+    left: 8vw;
+    background: var(--color-cnname);
+    background-clip: text;
+    color: transparent;
+    font-size: 10vw;
+    font-weight: 600;
+    animation: appear 1s 2.7s 1 both;
+}
+.enname{
+    width: max-content;
+    position: relative;
+    margin-top: 3vh;
+    left: 30vw;
+    background: var(--color-cnname);
+    background-clip: text;
+    color: transparent;
+    font-size: 7vw;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: 'CodeNewRoman';
+    animation: appear 1s 2.7s 1 both;
+}
+.slogan{
+    position: relative;
+    width: max-content;
+    margin: auto;
+    margin-top: 17vh;
+    color: transparent;
+    background: var(--color-cnname);
+    background-clip: text;
+    font-size: 4vw;
+    font-weight: 500;
+    letter-spacing: 2vw;
+    font-family: 'YousheBiaotiyuan';
+    animation: slogan 2s 3s 1 both;
+
+}
+
+.main{
+    position: relative;
+    top: 100px;
+    padding-top: 2vh;
+}

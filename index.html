@@ -2,118 +2,81 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>棱音社notedge</title>
-    <link rel="icon" href="./images/icon.ico">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./scripts/scrollToA.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+    <title>棱音社PRISMNOTE</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/var.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>
+        function toTop()
+        {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 <body>
+    <!-- 鼠标指针效果 -->
+    <div id="point"></div>
+    <!-- 头部 -->
     <div class="header">
-        <div class="logo"></div>
-        <!-- <div class="leader"> -->
-            <ul>
-                <li>
-                    <a href="javascript:void(0);" onclick="scrollToA('about')">
-                        <span class="b1">rnfmabj</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" onclick="scrollToA('works')">
-                        <span class="b2">hahaha</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" onclick="scrollToA('joinus')">
-                        <span class="b3">TEST</span>
-                    </a>
-                </li>
-                <li>
-                    <!-- <a href="https://space.bilibili.com/1806432678/" target="_blank">
-                        <span class="b4">探索B站</span>
-                    </a> -->
-                    <a href="https://www.bilibili.com/" target="_blank">
-                        <span class="b4">探索B站</span>
-                    </a>
-                </li>
-            </ul>
-        <!-- </div> -->
+        <div class="titile">
+            <a href="javascript:void(0);" onclick="toTop()">
+                <img src="./images/prismnote1.png" alt="prismnote">
+            </a>
+        </div>
+        <!-- 功能键 -->
+        <ul class="links">
+            <li>
+                <a href="./about/index.html" target="_self">
+                    <p class="button">关于棱音</p>
+                </a>
+            </li>
+            <li>
+                <a href="./joinus/index.html" target="_self">
+                    <p class="button">加入我们</p>
+                </a>
+            </li>
+            <li>
+                <a href="./members/index.html" target="_self">
+                    <p class="button">棱音成员</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://space.bilibili.com/1806432678" target="_blank">
+                    <p class="button">B站空间</p>
+                </a>
+            </li>
+        </ul>
+        <button class="lang">LANG</button>
+        <button class="list"></button>
     </div>
     <div class="main">
-        <div class="neck">
-            <div class="silider">
-                TestTest迢辰和本社网管TTBJ祝大家元旦快乐。
-            </div>
-            <div class="list">
-
-            </div>
+        <div class="intro">
+            > This Is
         </div>
-        <a id="about" class="p"></a>
-        <h2>rnfmabj</h2>
-        <div class="box1">
-            <p>
-                这里是棱音社。
-            </p>
-            <p>
-                这里是测试页，棱音社的测试页。最早为0.0.100版本，现作废用作测试使用，一切信息均无效。相关功能有所删减和解除，不代表最终效果。from 网管TTBJ
-            </p>
+        <div class="secondline">
+            > 
         </div>
-        <a id="works" class="p"></a>
-        <h2>hahaha</h2>
-        <div class="box2"></div>
-        <a id="joinus" class="p"></a>
-        <h2>TEST</h2>
-        <div class="box3">
-            <div class="word">
-                <p>
-                    棱音社长期招新，欢迎有才艺的你加入我们！
-                </p>
-                <p>
-                    审核群：现在就不告诉你诶嘿嘿
-                </p>
-            </div>
-            <div class="img"></div>
+        <div class="cnname">
+            <span>棱</span>
+            <span>音</span>
+            <span>社</span>
         </div>
-        <div class="box4">
-            <ul>
-                <li>
-                    <!-- 作曲 -->
-                    <div class="icons">
-                        <span style="font-size: 40px;font-weight:1000;">
-                            &#xe600;
-                        </span>
-                    </div>
-                    <div class="word"></div>
-                </li>
-                <li>
-                    <!-- 作词 -->
-                    <div class="icons">
-                        <span style="font-size: 53px;font-weight:1000;">
-                            &#xe64b;
-                        </span>
-                    </div>
-                    <div class="word"></div>
-                </li>
-                <li>
-                    <!-- 混音 -->
-                    <div class="icons">
-                        <span style="font-size: 42px;font-weight:1000;">
-                            &#xe84e;
-                        </span>
-                    </div>
-                    <div class="word"></div>
-                </li>
-                <li>
-                    <!-- 调校 -->
-                    <div class="icons">
-                        <span style="font-size: 48px;font-weight:1000;">
-                            &#xe757;
-                        </span>
-                    </div>
-                    <div class="word"></div>
-                </li>
-            </ul>
+        <div class="enname">
+            <!-- <span>P</span>
+            <span>R</span>
+            <span>I</span>
+            <span>S</span>
+            <span>M</span>
+            <span>N</span>
+            <span>O</span>
+            <span>T</span>
+            <span>E</span> -->
+            PRISMNOTE
+        </div>
+        <div class="slogan">
+            棱幻寰歌·音驭辰霜
         </div>
     </div>
 </body>

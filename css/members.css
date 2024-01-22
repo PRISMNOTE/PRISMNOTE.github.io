@@ -1,0 +1,93 @@
+h1{
+    display: block;
+    color: #eee;
+    font-size: 3.5vw;
+    letter-spacing: .2vw;
+    left: 5vw;
+    width: max-content;
+}
+
+.main{
+    position: relative;
+    top: 100px;
+    padding-top: 6vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* 卡片样式 */
+#container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-top: 5vh; */
+    /* background-color: #f00; */
+}
+/* .container li{
+    height: var(--size-card-height);
+    width: var(--size-card-width);
+    flex-shrink: 0;
+} */
+.card{
+    /* background-color: #777; */
+    position: relative;
+    height: var(--size-card-height);
+    width: var(--size-card-width);
+    max-width: 40vw;
+    z-index: 5;
+    margin-top: 5vw;
+}
+.card div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* content: ''; */
+    z-index: 2;
+    opacity: .3;
+    background-size: cover;
+    background-position: 50%;
+    box-shadow: 0 0 0 2px hsla(240,0%,100%,.3) inset, .1em .3em 1em rgba(100, 100, 100, 0.6);
+
+}
+.card::after{
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+    opacity: .3;
+    box-shadow: 0 0 0 2px hsla(240,0%,100%,.3) inset;
+    background: linear-gradient(160deg, rgba(255,255,255,0), rgba(200,200,255,.3)70%, rgba(200,200,255,.3) 75%, rgba(200,200,255,.3) 80%, rgba(255,255,255,0));
+}
+.card img{
+    display: block;
+    position: absolute;
+    top: -3vw;
+    left: 1vw;
+    z-index: 10;
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+    border: #eee .4vw solid;
+}
+.card h2{
+    position: relative;
+    z-index: 9;
+    left: 11vw;
+    display: block;
+    height: 6vw;
+    width: 16.5vw;
+    line-height: 6vw;
+    color: #fff;
+    font-size: 1.8vw;
+}
+.card p{
+    padding: 5% 7%;
+    font-size: 1.5vw;
+    color: #fff;
+    position: relative;
+    z-index: 8;
+}
