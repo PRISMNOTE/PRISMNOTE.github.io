@@ -23,15 +23,8 @@
     {
         "uid": "388224746",
         "name": "TTBJ",
-        "image": "../images/demo.jpg",
+        "image": "../images/ttbj.jpg",
         "desc": "野路子蒟蒻p主", 
         "bg": ""
-    },
-    {
-        "uid": "15817819",
-        "name": "Stardust Official",
-        "image": "../images/demo.jpg",
-        "desc": "M5 virtual singer Stardust",
-        "bg": "../images/demo.jpg"
     }
 ]
