@@ -14,6 +14,7 @@
             window.scrollTo(0, 0);
         }
     </script>
+    <script src="./scripts/openList.js"></script>
 </head>
 <body>
     <!-- 鼠标指针效果 -->
@@ -21,7 +22,7 @@
     <!-- 头部 -->
     <div class="header">
         <div class="titile">
-            <a href="javascript:void(0);" onclick="toTop()">
+            <a href="javascript:void(0);" onclick="toTop();">
                 <img src="./images/prismnote1.png" alt="prismnote">
             </a>
         </div>
@@ -48,8 +49,30 @@
                 </a>
             </li>
         </ul>
-        <button class="lang">LANG</button>
-        <button class="list"></button>
+        <button id="lang">LANG</button>
+        <button id="list" class="list" onclick="openList('list');">&#xe76b;</button>
+        <ul id="listobj">
+            <li>
+                <a href="./about/index.html" target="_self">
+                    <p class="buttonn">关于棱音</p>
+                </a>
+            </li>
+            <li>
+                <a href="./joinus/index.html" target="_self">
+                    <p class="buttonn">加入我们</p>
+                </a>
+            </li>
+            <li>
+                <a href="./members/index.html" target="_self">
+                    <p class="buttonn">棱音成员</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://space.bilibili.com/1806432678" target="_blank">
+                    <p class="buttonn">B站空间</p>
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="main">
         <div class="intro">

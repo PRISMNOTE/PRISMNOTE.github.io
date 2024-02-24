@@ -43,6 +43,37 @@ body{
     to {top: 0; opacity: 1;}
 }
 
+@-webkit-keyframes startIntro {
+    from {left: 1.7cap;}
+    10% {left: 2.6cap;}
+    20% {left: 3.5cap;}
+    30% {left: 4.3cap;}
+    40% {left: 5.2cap;}
+    50% {left: 6.1cap;}
+    80% {left: 6.9cap;}
+    90% {left: 7.7cap;}
+    to {left: 7.7cap;}
+}
+@-webkit-keyframes bling {
+    from {background-color: #eee;}
+    50% {background-color: transparent;}
+    to {background-color: transparent;}
+}
+@-webkit-keyframes trans {
+    from {top: 0;}
+    50% {top: 8vw; left: 1.7cap;}
+    to {top: 8vw; left: 1.7cap;}
+}
+@-webkit-keyframes appear {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes slogan {
+    from {top: 10vh; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
 .intro{
     position: absolute;
     font-family: 'CodeNewRoman';
@@ -52,7 +83,7 @@ body{
     margin-left: 5vw;
     z-index: 99;
     animation: appear 1s reverse 1.7s 1 both;
-
+    -webkit-animation: appear 1s reverse 1.7s 1 both;
 }
 .secondline{
     position: absolute;
@@ -63,6 +94,7 @@ body{
     margin-left: 5vw;
     z-index: 99;
     animation: appear 1ms step-end 1.5s 1 both, appear 1s reverse 1.7s 1 forwards;
+    -webkit-animation: appear 1ms step-end 1.5s 1 both, appear 1s reverse 1.7s 1 forwards;
 }
 .intro::before{
     position: absolute;
@@ -73,6 +105,7 @@ body{
     background-color: #222;
     top: 0;
     animation: startIntro 1s step-end 1 forwards;
+    -webkit-animation: startIntro 1s step-end 1 forwards;
 }
 .intro::after{
     position: absolute;
@@ -83,6 +116,7 @@ body{
     width: .9cap;
     background-color: #eee;
     animation: bling 1s step-end infinite, startIntro 1s step-end 1 forwards, trans 1ms step-end 1.5s 1 both;
+    -webkit-animation: bling 1s step-end infinite, startIntro 1s step-end 1 forwards, trans 1ms step-end 1.5s 1 both;
 }
 
 .cnname{
@@ -96,6 +130,7 @@ body{
     font-size: 10vw;
     font-weight: 600;
     animation: appear 1s 2.7s 1 both;
+    -webkit-animation: appear 1s 2.7s 1 both;
 }
 .enname{
     width: max-content;
@@ -110,6 +145,7 @@ body{
     letter-spacing: 5px;
     font-family: 'CodeNewRoman';
     animation: appear 1s 2.7s 1 both;
+    -webkit-animation: appear 1s 2.7s 1 both;
 }
 .slogan{
     position: relative;
@@ -124,7 +160,7 @@ body{
     letter-spacing: 2vw;
     font-family: 'YousheBiaotiyuan';
     animation: slogan 2s 3s 1 both;
-
+    -webkit-animation: slogan 2s 3s 1 both;
 }
 
 .main{

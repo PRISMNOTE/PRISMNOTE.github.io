@@ -2,6 +2,11 @@ html{
     background-color: #222;
 }
 
+@font-face {
+    font-family: 'iconfont';
+    src: url("../fonts/iconfont.ttf");
+}
+
 body{
     min-height: 100vh;
     /* height: 900vh; */
@@ -37,10 +42,11 @@ body{
 .titile img{
     display: block;
     height: 80px;
+    /* max-width: 40vw; */
 }
 .links{
     width: 50vw;
-    display: flex;
+    display: var(--if-links);
     flex-direction: row;
     align-items: center;
 }
@@ -69,7 +75,7 @@ body{
 .active{
     color: var(--color-button-hover);
 }
-.lang{
+#lang{
     display: block;
     width: 70px;
     font-size: 18px;
@@ -82,4 +88,53 @@ body{
 } */
 .list{
     display: var(--if-list);
+    height: 60px;
+    width: 60px;
+    border-radius: 20%;
+    flex-shrink: 0;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'iconfont';
+    font-size: 40px;
+    font-weight: 800;
+    /* background-color: red; */
+}
+.openlist{
+    background-color: rgba(99, 99, 99, .5);
+}
+.listobj{
+    display: block !important ;
+    height: calc(100vh - 130px);
+    max-height: 400px;
+    width: 90vw;
+    background-color: #333;
+    top: 125px;
+    left: 5vw;
+    border-radius: 8px;
+}
+.listobj li{
+    display: block;
+    height: 25%;
+    width: 100%;
+}
+.buttonn{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+.listobj a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 100ms;
+}
+.listobj a:hover{
+    background-color: rgba(99, 99, 99, .5);
+}
+#listobj{
+    position: absolute;
+    display: none;
+    transition: all 500ms;
 }

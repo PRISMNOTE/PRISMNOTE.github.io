@@ -4,7 +4,14 @@
     --color-cnname: linear-gradient(160deg, #3A8188, #DB0AA7);
     
     --if-list: none;
+    --if-links: flex;
 
     --size-card-width: 28vw;
     --size-card-height: 17.3vw;
+}
+@media screen and (max-width: 900px) {
+    :root{
+        --if-list: block;
+        --if-links: none;
+    }
 }
