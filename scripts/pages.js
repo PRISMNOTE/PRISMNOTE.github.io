@@ -3,9 +3,8 @@ function toTop(evt) {
     window.scrollTo(0, 0);
 }
 
+// 页面切换
 function change_page(evt, PageName) {
-    console.log("Page Changed");
-    console.log(PageName);
     var i, tabContent, tabLinks;
 
     // 隐藏所有页面内容
