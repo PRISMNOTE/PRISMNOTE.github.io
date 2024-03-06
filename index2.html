@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>棱音社PRISMNOTE</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/var.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="./scripts/openList.js"></script>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/fillMembers.js"></script>
+    <script src="./scripts/pages.js"></script>
+</head>
+
+<body>
+    <!-- 鼠标指针效果 -->
+    <div id="point"></div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="titile">
+            <a href="javascript:void(0);" onclick="toTop(event);" id="logo">
+                <img src="./images/prismnote1.png" alt="prismnote">
+            </a>
+        </div>
+        <!-- 功能键 -->
+        <ul class="links">
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="button" onclick="change_page(event, 'about_page');">关于棱音</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="button" onclick="change_page(event, 'join_page');">加入我们</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="button" onclick="change_page(event, 'members_page');">棱音成员</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://space.bilibili.com/1806432678" target="_blank">
+                    <p class="button">B站空间</p>
+                </a>
+            </li>
+        </ul>
+        <button id="lang">LANG</button>
+        <button id="list" class="list" onclick="openList('list');">&#xe76b;</button>
+        <ul id="listobj">
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="buttonn" onclick="change_page(event, 'about_page');">关于棱音</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="buttonn" onclick="change_page(event, 'join_page');">加入我们</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="buttonn" onclick="change_page(event, 'members_page');">棱音成员</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://space.bilibili.com/1806432678" target="_blank">
+                    <p class="buttonn">B站空间</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main" id="default_page">
+        <div class="intro">
+            > This Is
+        </div>
+        <div class="secondline">
+            >
+        </div>
+        <div class="cnname">
+            <span>棱</span>
+            <span>音</span>
+            <span>社</span>
+        </div>
+        <div class="enname">
+            <!-- <span>P</span>
+            <span>R</span>
+            <span>I</span>
+            <span>S</span>
+            <span>M</span>
+            <span>N</span>
+            <span>O</span>
+            <span>T</span>
+            <span>E</span> -->
+            PRISMNOTE
+        </div>
+        <div class="slogan">
+            棱幻寰歌·音驭辰霜
+        </div>
+    </div>
+    <div class="main" id="about_page">
+        <h1>关于棱音</h1>
+    </div>
+    <div class="main" id="join_page">
+        <h1>加入我们</h1>
+    </div>
+    <div class="main" id="members_page">
+        <h1>棱音成员</h1>
+        <ul id="container"></ul>
+    </div>
+</body>
+
+</html>
