@@ -1,5 +1,5 @@
 //根据info.json填写成员列表
-$.getJSON("../members/info.json", function(data){
+$.getJSON("./info.json", function(data){
     var addCardHtml = "";
     if (data.length < 1) {
         alert("Error! Please contact us. ");
