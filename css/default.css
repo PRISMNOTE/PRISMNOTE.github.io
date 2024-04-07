@@ -9,6 +9,7 @@ html{
 
 body{
     min-height: 100vh;
+    padding-bottom: 10vh;
     /* height: 900vh; */
     /* background: linear-gradient(180deg, #3A8188, #DB0AA7); */
 }
