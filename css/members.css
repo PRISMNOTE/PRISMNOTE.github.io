@@ -103,7 +103,7 @@ h1{
     font-size: 1.8vw;
 }
 .card pre{
-    font-family: 'CodeNewRoman';
+    font-family: 'CodeNewRoman', 'YousheBiaotiyuan';
     white-space: pre-wrap;
     padding: 5% 7%;
     font-size: 1.5vw;
