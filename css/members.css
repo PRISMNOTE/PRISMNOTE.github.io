@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'CodeNewRoman';
+    src: url('../fonts/Code-New-Roman-b-1.otf');
+}
+@font-face {
+    font-family: 'YousheBiaotiyuan';
+    src: url('../fonts/YouSheBiaoTiYuan-2.otf');
+}
+
 h1{
     display: block;
     color: #eee;
@@ -94,6 +103,7 @@ h1{
     font-size: 1.8vw;
 }
 .card pre{
+    font-family: 'CodeNewRoman';
     white-space: pre-wrap;
     padding: 5% 7%;
     font-size: 1.5vw;
