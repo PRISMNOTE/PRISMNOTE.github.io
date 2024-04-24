@@ -1,4 +1,3 @@
-//TODO
 function readCSV(path, callback) {
     $.get(path, function (data){
         var result = "[";
@@ -18,10 +17,6 @@ function readCSV(path, callback) {
                     flag.push(1);
                 }
                 else {
-                    // if(raw[i].charAt(raw[i].length -1) === '"') {
-                    //     a.push(raw[i].slice(1, raw[i].length - 2));
-                    //     flag.push(1);
-                    // }
                     end = 0;
                     x = 2;
                 }
@@ -60,7 +55,6 @@ function readCSV(path, callback) {
                 //获取引号之间的部分添加至a
                 a.push(raw[i].slice(start + 2, end));
                 flag.push(1);
-                console.log(a,flag);
                 start = raw[i].indexOf(',"', end);
             }
             if (end != -1 && raw[i].slice(end + 2) != "") {
@@ -71,14 +65,6 @@ function readCSV(path, callback) {
                 a.pop();
                 flag.pop();
             }
-            // if (start != -1) {
-            //     end = raw[i].indexOf('",', start);
-            //     if (end != -1)
-            //     console.log(end);
-            // }
-            // console.log(start);
-            //values[i-1] = raw[i].split(','); 
-            console.log(a);
             for(var j = 0; j < a.length; j++) {
                 if (flag[j] == 1) {
                     values[i - 1].push(a[j]);
@@ -87,7 +73,6 @@ function readCSV(path, callback) {
                     var b = a[j].split(',');
                     console.log(b.length);
                     for (var k = 0; k < b.length; k++) {
-                        //console.log(b);
                         values[i - 1].push(b[k]);
                     }
                 }
