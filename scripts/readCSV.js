@@ -71,7 +71,6 @@ function readCSV(path, callback) {
                 }
                 else {
                     var b = a[j].split(',');
-                    console.log(b.length);
                     for (var k = 0; k < b.length; k++) {
                         values[i - 1].push(b[k]);
                     }
@@ -81,7 +80,6 @@ function readCSV(path, callback) {
         for(var i = 0; i < values.length; i++) {
             if(i != 0) result += ",";
             result += "{";
-            console.log(values[i]);
             for(var j = 0; j < keys.length; j++) {
                 if(j != 0) result += ",";
                 result += 
