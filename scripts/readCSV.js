@@ -5,6 +5,11 @@ function readCSV(path, callback) {
         var keys = raw[0].split(',');
         var values = [];
         for(var i = 1; i < raw.length; i++) {
+            // csv文件中空行处理
+            if (!raw[i])
+            {
+                continue;
+            }
             values[i - 1] = new Array();
             var end = -2;
             var x = 0;
