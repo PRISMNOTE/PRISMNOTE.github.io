@@ -131,7 +131,7 @@ body{
     background: var(--color-cnname);
     background-clip: text;
     color: transparent;
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 600;
     animation: appear 1s 2.7s 1 both;
     -webkit-animation: appear 1s 2.7s 1 both;
@@ -144,7 +144,7 @@ body{
     background: var(--color-cnname);
     background-clip: text;
     color: transparent;
-    font-size: 7vw;
+    font-size: 5vw;
     font-weight: 600;
     letter-spacing: 4px;
     font-family: 'CodeNewRoman';
@@ -159,7 +159,7 @@ body{
     color: transparent;
     background: var(--color-cnname);
     background-clip: text;
-    font-size: 3vw;
+    font-size: 1vw;
     font-weight: 500;
     letter-spacing: 2vw;
     font-family: 'YousheBiaotiyuan';
