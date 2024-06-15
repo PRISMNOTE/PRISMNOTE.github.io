@@ -6,6 +6,10 @@
     font-family: 'YousheBiaotiyuan';
     src: url('../fonts/YouSheBiaoTiYuan-2.otf');
 }
+@font-face{
+    font-family: 'KhaenriahNeue';
+    src: url('../font/KhaenriahNeue-Regular-2.000.otf');
+}
 
 body{
     height: 100vh;
