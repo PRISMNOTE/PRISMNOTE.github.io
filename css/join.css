@@ -1,0 +1,180 @@
+body {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    background-color: aliceblue;
+    padding: 0;
+    min-height: 0;
+}
+
+.desktop {
+    left: 0vw;
+    top: 0vw;
+    width: 100vw;
+    height: auto;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.desktop>div {
+    position: relative;
+}
+
+/* .button {
+    z-index: 40;
+} */
+
+/* .pic>.triangle {
+    position: absolute;
+} */
+
+.bilibili {
+    left: 65vw;
+    top: -45vw;
+    width: 200px;
+    height: 80px;
+    opacity: 1;
+    border-radius: 45px;
+    background: rgba(24, 144, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 28px 40px 28px 40px;
+    /* position: relative; */
+}
+
+.bilibilitext {
+    left: 40px;
+    top: 28px;
+    width: 120px;
+    height: 24px;
+    opacity: 1;
+    display: flex;
+
+    /** 文本1 */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+
+.qq {
+    left: 65vw;
+    top: -40vw;
+    width: 200px;
+    height: 80px;
+    opacity: 1;
+    border-radius: 45px;
+    background: rgba(24, 144, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 28px 40px 28px 40px;
+
+}
+
+.qqtext {
+    left: 40px;
+    top: 28px;
+    width: 120px;
+    height: 24px;
+    opacity: 1;
+    display: flex;
+
+    /** 文本1 */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+
+}
+
+.db {
+    left: 65vw;
+    top: -35vw;
+    width: 200px;
+    height: 80px;
+    opacity: 1;
+    border-radius: 45px;
+    background: rgba(24, 144, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 28px 40px 28px 40px;
+
+}
+
+.dbtext {
+    left: 40px;
+    top: 28px;
+    width: 120px;
+    height: 24px;
+    opacity: 1;
+    display: flex;
+
+    /** 文本1 */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+
+}
+
+.frontpic {
+    left: -40vw;
+    top: 0vw;
+    width: auto;
+    height: 60vw;
+    opacity: 1;
+    /* z-index: 30; */
+    /* background: ""; */
+    /* position: absolute !important; */
+    background: "../images/frontpic.png";
+    background-size: 54%;
+}
+
+.triangle {
+    left: 889.31px;
+    top: -261px;
+    width: 1959.16px;
+    height: 1941.69px;
+    opacity: 1;
+    /* z-index: 20; */
+    transform: rotate(24.8deg);
+    background: rgba(165, 201, 232, 1);
+    filter: blur(16px);
+    position: absolute !important;
+}
+
+.backpic {
+    left: -20vw;
+    top: -30vw;
+    width: 1527px;
+    height: 1767px;
+    mix-blend-mode: multiply;
+    opacity: 0.35;
+    /* z-index: 10; */
+    background: "../images/backpic.png";
+    filter: blur(25px);
+    position: absolute !important;
+}
+
+.untext {
+    bottom: 2vw;
+}
