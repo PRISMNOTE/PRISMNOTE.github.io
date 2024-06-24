@@ -145,7 +145,7 @@ body {
     /* z-index: 30; */
     /* background: ""; */
     /* position: absolute !important; */
-    background: "https://github.com/PRISMNOTE/PRISMNOTE.github.io/blob/main/images/frontpic.png";
+    background: "https://PRISMNOTE.github.io/images/frontpic.png";
     background-size: 54%;
 }
 
@@ -170,7 +170,7 @@ body {
     mix-blend-mode: multiply;
     opacity: 0.35;
     /* z-index: 10; */
-    background: "../images/backpic.png";
+    background: "https://PRISMNOTE.github.io/images/backpic.png";
     filter: blur(25px);
     position: absolute !important;
 }
