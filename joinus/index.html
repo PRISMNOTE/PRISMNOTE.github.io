@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/join.css">
     <script src="../scripts/openList.js"></script>
+    <script src="../scripts/openDialogue.js"></script>
 </head>
 
 <body>
     <div id="point"></div>
-
     <div class="header">
         <div class="titile">
             <a href="../index.html" target="_self">
@@ -69,37 +69,34 @@
             </li>
         </ul>
     </div>
-
     <div class="desktop">
         <div class="backpic"></div>
         <div class="triangle"></div>
-        <div class="frontpic"></div>
-
-
-        <div class="bilibili">
-            <a href="https://space.bilibili.com/1806432678">
-                <p class="bilibilitext">B站简介</p>
-            </a>
+        <div id="qr">
+            <button id="close" onclick="openDialogue('qr','none','');openDialogue('qrbg','none');">X</button>
+            <img src="../images/qrcode.png" alt="qrcode">
+            <p>棱音社PRISMNOTE审核群</p>
+            <p>QQ群号：909539996</p>
         </div>
-
-        <div class="qq">
-            <a href="">
-                <p class="qqtext">QQ审核群</p>
-            </a>
-        </div>
-
-        <div class="db">
-            <a href="">
-                <p class="dbtext">空间站<br>（未开放）</p>
-            </a>
-        </div>
-
-        <div class="untext">
-            <p>还不知道写什么，所以放一行字在这里。<br>以及上面三个按钮里的字都居中了，————————————————————————。</p>
+        <div id="qrbg"></div>
+        <div id="front">
+            <div id="frontpic"></div>
+            <div id="joinoptions">
+                <a id="bilibili" class="joinoption" href="https://space.bilibili.com/1806432678" target="_blank">
+                    <p>B站简介</p>
+                </a>
+                <a id="qq" class="joinoption" href="javascript:void(0);" onclick="openDialogue('qr','flex');openDialogue('qrbg','block');">
+                    <p>QQ审核群</p>
+                </a>
+                <a id="db" class="joinoption" href="javascript:void(0);">
+                    <p>空间站<br>（未开放）</p>
+                </a>
+            </div>
+            <div id="untext">
+                <p>还不知道写什么，所以放一行字在这里。<br>以及上面三个按钮里的字都居中了，————————————————————————。</p>
+                <p>以上是 @迢辰 写完初版之后写的。再版 @TTBJ</p>
+            </div>
         </div>
     </div>
-
-
 </body>
-
 </html>

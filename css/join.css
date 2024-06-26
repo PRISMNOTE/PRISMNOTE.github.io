@@ -1,180 +1,154 @@
 body {
-    width: auto;
-    height: auto;
-    opacity: 1;
     background-color: aliceblue;
     padding: 0;
-    min-height: 0;
 }
 
 .desktop {
-    left: 0vw;
-    top: 0vw;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     opacity: 1;
     background: rgba(255, 255, 255, 1);
     position: relative;
     overflow: hidden;
+
 }
 
-.desktop>div {
+#qrbg {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    background-color: #000;
+    opacity: .7;
+}
+
+#qr {
+    position: absolute;
+    display: none;
+    width: var(--qr-width);
+    left: calc(calc(100vw - var(--qr-width)) / 2);
+    height: var(--qr-height);
+    top: 20vh;
+    background-color: #fff;
+    border-radius: .5vw;
+    z-index: 100;
+    padding-top: .7% ;
+    flex-direction: column;
+    align-items: center;
+}
+#qr img {
+    margin-top: 2vw;
+    width: var(--qr-code-width);
+    height: fit-content;
+    transition: all .3s;
+}
+#qr p {
+    letter-spacing: .05vw;
+    font-size: var(--qr-font-size);
+    color: #555;
+    margin-top: 1vw;
+    transition: all .3s;
+}
+
+#close {
+    color: #777;
+    position: absolute;
+    right: .3vw;
+    font-size: calc(var(--qr-font-size) * 1.5);
+    height: calc(var(--qr-font-size) * 2);
+    width: calc(var(--qr-font-size) * 2);
+    cursor: pointer;
+}
+
+.desktop * {
     position: relative;
 }
 
-/* .button {
-    z-index: 40;
-} */
-
-/* .pic>.triangle {
-    position: absolute;
-} */
-
-.bilibili {
-    left: 65vw;
-    top: -45vw;
-    width: 200px;
-    height: 80px;
-    opacity: 1;
-    border-radius: 45px;
-    background: rgba(24, 144, 255, 1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 28px 40px 28px 40px;
-    /* position: relative; */
+#front {
+    display: grid;
+    column-gap: 2vw;
+    grid-template-columns: 12vw 1fr 13.1vw 20vw;
+    grid-template-rows: calc(120px + 3vw) 1fr 1.2fr .3fr 10vh;
+    height: 100%;
+    width: 100%;
 }
+/* row2 row4 调节图片高度，row3 row5 调节按钮组高度 */
 
-.bilibilitext {
-    left: 40px;
-    top: 28px;
-    width: 120px;
-    height: 24px;
-    opacity: 1;
-    display: flex;
-
-    /** 文本1 */
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    vertical-align: middle;
-
-
-}
-
-.qq {
-    left: 65vw;
-    top: -40vw;
-    width: 200px;
-    height: 80px;
-    opacity: 1;
-    border-radius: 45px;
-    background: rgba(24, 144, 255, 1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 28px 40px 28px 40px;
-
-}
-
-.qqtext {
-    left: 40px;
-    top: 28px;
-    width: 120px;
-    height: 24px;
-    opacity: 1;
-    display: flex;
-
-    /** 文本1 */
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    vertical-align: top;
-
-}
-
-.db {
-    left: 65vw;
-    top: -35vw;
-    width: 200px;
-    height: 80px;
-    opacity: 1;
-    border-radius: 45px;
-    background: rgba(24, 144, 255, 1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 28px 40px 28px 40px;
-
-}
-
-.dbtext {
-    left: 40px;
-    top: 28px;
-    width: 120px;
-    height: 24px;
-    opacity: 1;
-    display: flex;
-
-    /** 文本1 */
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    vertical-align: top;
-
-}
-
-.frontpic {
-    left: -40vw;
-    top: 0vw;
+#frontpic {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background: url("https://PRISMNOTE.github.io/images/frontpic.png");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 50% 45%;
+    height: 100%;
     width: auto;
-    height: 60vw;
-    opacity: 1;
-    /* z-index: 30; */
-    /* background: ""; */
-    /* position: absolute !important; */
-    background: url(https://PRISMNOTE.github.io/images/frontpic.png);
-    background-size: 54%;
 }
 
-.triangle {
-    left: 889.31px;
-    top: -261px;
-    width: 1959.16px;
-    height: 1941.69px;
-    opacity: 1;
-    /* z-index: 20; */
-    transform: rotate(24.8deg);
-    background: rgba(165, 201, 232, 1);
-    filter: blur(16px);
-    position: absolute !important;
+#joinoptions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vw 5vw 5vw 1fr;
+    row-gap: 3vw;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: -2;
+}
+
+#untext {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: -2;
+    grid-row-end: -1;
+}
+
+.joinoption {
+    background: rgba(24, 144, 255, 1);
+    border-radius: 2.5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.joinoption p {
+    color: #fff;
+    font-size: 1.5vw;
+    letter-spacing: .2vw;
+    text-align: center;
+}
+#db p {
+    font-size: 1.3vw;
 }
 
 .backpic {
-    left: -20vw;
-    top: -30vw;
-    width: 1527px;
-    height: 1767px;
+    width: 100%;
+    height: 100%;
+    min-width: 70vh;
     mix-blend-mode: multiply;
     opacity: 0.35;
     /* z-index: 10; */
     background: url(https://PRISMNOTE.github.io/images/backpic.png);
-    filter: blur(25px);
+    filter: blur(15px);
     position: absolute !important;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 250% 43%;
 }
 
-.untext {
-    bottom: 2vw;
+.triangle {
+    left: 70vw;
+    top: -30vw;
+    width: 200vh;
+    height: 200vh;
+    opacity: 1;
+    /* z-index: 20; */
+    transform: rotate(25deg);
+    background: rgba(165, 201, 232, 1);
+    filter: blur(16px);
+    position: absolute !important;
 }

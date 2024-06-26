@@ -8,10 +8,21 @@
 
     --size-card-width: 28vw;
     --size-card-height: 17.3vw;
+
+    --qr-width: 26vw;
+    --qr-height: 30vw;
+    --qr-code-width: 20vw;
+    --qr-font-size: 1vw;
+
 }
 @media screen and (max-width: 900px) {
     :root{
         --if-list: block;
         --if-links: none;
+
+        --qr-width: 70vw;
+        --qr-height: 75vw;
+        --qr-code-width: 60vw;
+        --qr-font-size: 2.5vw;
     }
 }
