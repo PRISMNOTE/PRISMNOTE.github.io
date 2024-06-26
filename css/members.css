@@ -64,7 +64,7 @@ h1{
     opacity: .3;
     background-size: cover;
     background-position: 50%;
-    box-shadow: 0 0 0 2px hsla(240,0%,100%,.3) inset, .1em .3em 1em rgba(100, 100, 100, 0.6);
+    box-shadow: 0 0 0 .1vw hsla(240,0%,100%,.3) inset, .1em .3em 1em rgba(100, 100, 100, 0.6);
 
 }
 .card::after{
@@ -77,7 +77,7 @@ h1{
     left: 3%;
     z-index: 1;
     opacity: .3;
-    box-shadow: 0 0 0 2px hsla(240,0%,100%,.3) inset;
+    box-shadow: 0 0 0 .1vw hsla(240,0%,100%,.3) inset;
     background: linear-gradient(160deg, rgba(255,255,255,0), rgba(200,200,255,.3)70%, rgba(200,200,255,.3) 75%, rgba(200,200,255,.3) 80%, rgba(255,255,255,0));
 }
 .card img{
