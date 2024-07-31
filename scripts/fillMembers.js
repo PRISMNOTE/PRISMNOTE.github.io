@@ -17,6 +17,7 @@ readCSV("info.csv", function (data){
                         </a>
                         <h2>${data[i].name}</h2>
                         <pre>${data[i].desc}</pre>
+                        <pre>${data[i].work}</pre>
                     </div>
                 </li>
                 `;
@@ -32,6 +33,7 @@ readCSV("info.csv", function (data){
                         </a>
                         <h2>${data[i].name}</h2>
                         <pre>${data[i].desc}</pre>
+                        <pre>${data[i].work}</pre>
                     </div>
                 </li>
                 `;
